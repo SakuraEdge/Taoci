@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_look">
+
+    <fragment
+        android:id="@+id/navigation_look"
+        android:name="com.example.letao.ui.home.LookFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_look" />
+
+    <fragment
+        android:id="@+id/navigation_listen"
+        android:name="com.example.letao.ui.dashboard.ListenFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_listen" />
+
+    <fragment
+        android:id="@+id/navigation_go"
+        android:name="com.example.letao.ui.notifications.GoFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_go" />
+
+    <fragment
+        android:id="@+id/navigation_learn"
+        android:name="com.example.letao.ui.learn.LearnFragment"
+        android:label="@string/title_learn"
+        tools:layout="@layout/fragment_go" />
+
+</navigation>
