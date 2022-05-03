@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.letao.R;
 import com.example.letao.databinding.FragmentLearnBinding;
 
 public class LearnFragment extends Fragment {
@@ -19,7 +20,8 @@ public class LearnFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         com.example.letao.ui.learn.LearnViewModel learnViewModel = new ViewModelProvider(this).get(LearnViewModel.class);
-
+        TextView title = (TextView) getActivity().findViewById(R.id.text_title);
+        title.setText("学知识");
         binding = FragmentLearnBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 

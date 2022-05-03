@@ -4,4 +4,6 @@
     <string name="title_dashboard">听讲解</string>
     <string name="title_notifications">逛展厅</string>
     <string name="title_learn">学知识</string>
+    <string name="todo">TODO</string>
+    <string name="title">标题栏</string>
 </resources>
