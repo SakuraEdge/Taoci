@@ -23,11 +23,8 @@ public class LearnFragment extends Fragment {
         TextView title = (TextView) getActivity().findViewById(R.id.text_title);
         title.setText("学知识");
         binding = FragmentLearnBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
-        final TextView textView = binding.textLearn;
-        learnViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+        return binding.getRoot();
     }
 
     @Override
